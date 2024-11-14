@@ -10,12 +10,19 @@ import Projects from './Components/Projects/index.jsx';
 import Support from './Components/Support/index.jsx';
 import Login from './Components/Login/index.jsx';
 import Signup from './Components/Signup/index.jsx';
+import ScriptForm from './Components/Scriptform/index.jsx';
+import NotFoundPage from './Components/ErrorPage/index.jsx';
 // Define Routes
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
   },
+  {
+    path: "*",
+    element: <NotFoundPage />,
+  },
+
   {
     path: "/login",
     element: <Login />,
@@ -32,6 +39,11 @@ const router = createBrowserRouter([
     path: "/support",
     element: <Support />,
   },
+  {
+    path: "/scriptform",
+    element: <ScriptForm />,
+  }
+
 ]);
 
 // Render Application

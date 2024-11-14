@@ -1,10 +1,15 @@
 import NavBar from '../Nav';
-import React from 'react';
+import ProjectsLandingpage from '../land';
+import Scripts from '../Scripts';
+import PostScript from '../PostScript';
 export default function Projects() {
     return (
         <div>
             <NavBar />
-            <h1>Projects</h1>
+            <ProjectsLandingpage/>
+            <Scripts/>
+            <PostScript/>
+
         </div>
     );
 }

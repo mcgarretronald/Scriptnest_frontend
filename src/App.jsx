@@ -4,7 +4,7 @@ import NavigationBar from './Components/LandingPage/NavigationBar';
 function App() {
 
   return (
-    <div className='bg-background h-screen text-white p-3'>
+    <div className='bg-background lg:h-screen text-white py-3'>
       <NavigationBar />
       <LandingPage />
     </div>
