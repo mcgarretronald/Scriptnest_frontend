@@ -1,4 +1,4 @@
-// utils/postScript.js
+const baseUrl = import.meta.env.VITE_BASE_URL;
 
 export async function postScript(formValues) {
     const formData = new FormData();
@@ -15,7 +15,7 @@ export async function postScript(formValues) {
     }
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/api/scripts/", {
+        const response = await fetch(`${baseUrl}/api/scripts/`, {
             method: "POST",
             body: formData,
         });

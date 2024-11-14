@@ -1,4 +1,4 @@
-// utils/registerUser.js
+const baseUrl = import.meta.env.VITE_BASE_URL;
 
 export async function registerUser({ email, password, role, profilePicture }) {
     try {
@@ -10,7 +10,7 @@ export async function registerUser({ email, password, role, profilePicture }) {
             formData.append('profilePicture', profilePicture);
         }
 
-        const response = await fetch("http://127.0.0.1:8000/api/register/", {
+        const response = await fetch(`${baseUrl}/api/register/`, {
             method: "POST",
             body: formData, // Sending FormData to handle file upload
         });

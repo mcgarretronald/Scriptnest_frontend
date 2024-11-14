@@ -1,7 +1,8 @@
-// utils/loginUser.js
+const baseUrl = import.meta.env.VITE_BASE_URL;
+
 export async function loginUser(email, password) {
     try {
-        const response = await fetch("http://127.0.0.1:8000/api/login/", {
+        const response = await fetch(`${baseUrl}/api/login/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -10,17 +11,17 @@ export async function loginUser(email, password) {
         });
 
         if (!response.ok) {
-            const errorData = await response.json(); // Retrieve error details from backend
-            console.log("Error Data from Backend:", errorData); // Log error for debugging
-            throw new Error(errorData.error); // Access the error message correctly from the response
+            const errorData = await response.json();
+            console.log("Error Data from Backend:", errorData);
+            throw new Error(errorData.error);
         }
 
         const data = await response.json();
-        console.log("Response Data from Backend:", data); // Log successful response data
+        console.log("Response Data from Backend:", data);
         return { status: 'success', data };
 
     } catch (error) {
-        console.error("Login Error:", error.message); // Log error message
-        return { status: 'error', message: error.message }; // Return error message
+        console.error("Login Error:", error.message);
+        return { status: 'error', message: error.message };
     }
 }
