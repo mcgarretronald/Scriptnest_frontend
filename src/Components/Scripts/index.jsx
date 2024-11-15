@@ -68,7 +68,7 @@ export default function Scripts() {
                                 
                                 <button
                                     onClick={() => toggleExpand(script.script_id)}
-                                    className="text-blue-500 ml-2 underline"
+                                    className="text-blue-500 ml-2 underline cursor-pointer"
                                 >
                                     {expanded[script.script_id] ? "Less" : "More"}
                                 </button>
@@ -86,7 +86,7 @@ export default function Scripts() {
                                 </a>
                                 <button onClick={() => toggleLike(script.script_id)}>
                                     <FaHeart 
-                                        className={`text-2xl ${likedScripts[script.script_id] ? 'text-red-500' : 'text-gray-200'}`} 
+                                        className={`text-2xl ${likedScripts[script.script_id] ? 'text-red-500' : 'text-gray-200'} cursor-pointer`} 
                                     />
                                 </button>
                             </div>

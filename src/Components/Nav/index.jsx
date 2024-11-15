@@ -29,7 +29,7 @@ export default function NavBar() {
             <nav className='border-2 border-[#8763CD] rounded-[10px] mx-5 py-0 my-0 flex justify-between items-center '>
                 <Link to='/' className={`hover:text-[#9370DB] cursor-pointer ${activeTab === 'Home' ? 'text-[#9370DB]' : ''}`}>
                     <div className='text-4xl md:p-3' onClick={() => setActiveTab('Home')}>
-                        <img src="/public/scriptnestwhitelogo.png" alt="logo"
+                        <img src="/scriptnestwhitelogo.png" alt="logo"
                             className="w-[100px]" />
                     </div>
                 </Link>
