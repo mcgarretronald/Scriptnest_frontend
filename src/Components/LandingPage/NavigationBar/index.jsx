@@ -29,7 +29,7 @@ export default function NavigationBar() {
             {/* Logo Section */}
             <Link to="/" className={`hover:text-[#9370DB] cursor-pointer ${activeTab === 'Home' ? 'text-[white]' : ''}`}>
                 <div className="text-2xl p-3">
-                    <img src="/scriptnestpurplelogo.png" alt="logo" className="w-[100px]" />
+                    <img src="/scriptnestwhitelogo.png" alt="logo" className="w-[100px]" />
                 </div>
             </Link>
 

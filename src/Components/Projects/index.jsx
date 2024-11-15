@@ -4,7 +4,7 @@ import Scripts from '../Scripts';
 import PostScript from '../PostScript';
 export default function Projects() {
     return (
-        <div>
+        <div className=''>
             <NavBar />
             <ProjectsLandingpage/>
             <Scripts/>

@@ -43,7 +43,7 @@ export default function Support() {
             <div className="p-3 lg:grid grid-cols-2  flex flex-col">
                 <section className='text-center leading-5'>
                     <h1 className="text-[#30005A] md:text-[30px]">Help Us Shape the Future of Storytelling!</h1>
-                    <img src="/support.png" alt="Support" className="w-full mt-1" />
+                    <img src="/support.png" alt="Support" className="w-[500px] mt-1  ml-20" />
                     <p>Reach out to us today and let us create something amazing—your voice matters</p>
                     <p>Contact Us: <a href="mailto:mcgarretronald@gmail.com" className="text-[#30005A] cursor-pointer">SupportScriptNest@gmail.com</a></p>
                     <p>We are here to listen and grow with you.</p>
